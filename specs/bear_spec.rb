@@ -31,7 +31,7 @@ class BearTest < MiniTest::Test
     @river.add_fish(@fish_3)
     @river.remove_fish(@fish_1)
     @bear.add_fish_to_stomach(@fish_1)
-    assert_equal(2, @river.population_count())
+    assert_equal(2, @river.fish_count())
     assert_equal(1, @bear.food_count())
   end
 
